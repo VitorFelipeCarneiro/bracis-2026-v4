@@ -13,7 +13,9 @@ Este projeto foi desenvolvido focado em uma estética luxuosa, moderna e agradá
 - JavaScript
 
 ## Como visualizar
-Você pode visualizar a proposta do site acessando o link do GitHub Pages configurado neste repositório.
+Você pode visualizar a proposta do site e interagir com seu design acessando diretamente o link abaixo:
+
+👉 **[Clique aqui para acessar a Prévia do Site (BRACIS 2026 v4)](https://vitorfelipecarneiro.github.io/bracis-2026-v4/)**
 
 ---
 *Created as a design proposal draft.*
