@@ -14,7 +14,9 @@ Este projeto foi desenvolvido focado em uma estética moderna e agradável, inco
 ## Demonstração do Projeto
 Confira abaixo um rápido vídeo demonstrando a interface e as animações do site em funcionamento:
 
-<video src="./assets/videos/demo.mov" controls="controls" width="100%"></video>
+https://github.com/VitorFelipeCarneiro/bracis-2026-v4/raw/main/assets/videos/demo.mov
+
+*(Caso o vídeo acima não carregue automaticamente, [clique aqui para assistir ou baixar o vídeo demonstrativo](https://github.com/VitorFelipeCarneiro/bracis-2026-v4/raw/main/assets/videos/demo.mov))*
 
 ## Como visualizar
 
