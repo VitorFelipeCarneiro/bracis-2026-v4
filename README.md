@@ -11,8 +11,12 @@ Este projeto foi desenvolvido focado em uma estética moderna e agradável, inco
 - CSS3 (Vanilla / Custom)
 - JavaScript
 
+## Demonstração do Projeto
+Confira abaixo um rápido vídeo demonstrando a interface e as animações do site em funcionamento:
+
+<video src="./assets/videos/demo.mov" controls="controls" width="100%"></video>
+
 ## Como visualizar
-Você pode visualizar a proposta do site e interagir com seu design acessando diretamente o link abaixo:
 
 👉 **[Clique aqui para acessar a Prévia do Site (BRACIS 2026 v4)](https://vitorfelipecarneiro.github.io/bracis-2026-v4/)**
 
