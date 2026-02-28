@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRACIS 2026 | 36th Brazilian Conference on Intelligent Systems</title>
+    <meta name="description"
+        content="BRACIS 2026 - The 36th Brazilian Conference on Intelligent Systems. Cuiabá, MT, Brasil | Outubro 19-22, 2026.">
+
+    <!-- Google Fonts: Inter and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <!-- Top Bar (Optional small info bar like CSBC) -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>📅 19 a 22 de Outubro, 2026</span>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <span>|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#colocated" data-i18n="nav.colocated">Eventos Satélites</a></li>
+                <li><a href="organizacao.html" data-i18n="nav.organization">Organização</a></li>
+                <li><a href="#location" data-i18n="nav.location">Cuiabá</a></li>
+                <li><a href="#sponsors" data-i18n="nav.sponsors">Patrocinadores</a></li>
+                <li><a href="inscricoes.html" class="btn-primary" data-i18n="nav.register">Inscrever-se</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="assets/videos/hero_bg_video.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="hero-subtitle" data-i18n="hero.subtitle">36º Conferência Brasileira de Sistemas Inteligentes</h2>
+            <h1 class="hero-title">BRACIS 2026</h1>
+            <p class="hero-location" data-i18n="hero.location">Centro de Eventos do SENAI<br>Cuiabá, MT, Brasil</p>
+            <div class="hero-actions">
+                <a href="local_evento.html" class="btn-secondary" data-i18n="hero.local">Local do Evento</a>
+                <a href="inscricoes.html" class="btn-primary" data-i18n="nav.register">Inscrever-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section without Video Background -->
+    <section class="section bg-light-gray" id="about">
+        <div class="container">
+            <div class="grid-2-col" style="align-items: center;">
+                <div class="text-block">
+                    <h2 class="section-title" data-i18n="about.title">A Porta de Entrada para a Inovação em IA</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead-text" data-i18n="about.p1" style="margin-bottom: 1.5rem;">Bem-vindo à 36ª
+                        Conferência Brasileira de Sistemas Inteligentes. O
+                        BRACIS é um dos eventos mais importantes do Brasil para pesquisadores e profissionais de
+                        Inteligência
+                        Artificial e Computacional.</p>
+                    <p style="opacity: 0.9;" data-i18n="about.p2">Estamos entusiasmados em
+                        reunir a comunidade de IA e Inteligência Computacional mais uma vez para compartilhar
+                        conhecimento,
+                        descobrir novas tendências e promover parcerias institucionais e tecnológicas.</p>
+                </div>
+                <div class="image-block" style="text-align: center;">
+                    <img src="assets/images/bracis_logo.png" alt="BRACIS 2026 Logo"
+                        style="max-width: 100%; height: auto; mix-blend-mode: multiply;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Co-located Events Section -->
+    <section class="section" id="colocated">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="events.title">Eventos Satélites</h2>
+            <div class="title-underline center"></div>
+
+            <div class="cards-grid">
+                <a href="eniac.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card card-shadow hover-lift">
+                        <div class="card-header bg-blue">
+                            <h3>ENIAC</h3>
+                        </div>
+                        <div class="card-body">
+                            <p data-i18n="events.eniac">Encontro Nacional de Inteligência Artificial e Computacional</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="stil.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card card-shadow hover-lift">
+                        <div class="card-header bg-amber">
+                            <h3>STIL</h3>
+                        </div>
+                        <div class="card-body">
+                            <p data-i18n="events.stil">Simpósio Brasileiro de Tecnologia da Informação e da Linguagem
+                                Humana</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="kdmile.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card card-shadow hover-lift">
+                        <div class="card-header bg-blue">
+                            <h3>KDMILE</h3>
+                        </div>
+                        <div class="card-body">
+                            <p data-i18n="events.kdmile">Simpósio de Descoberta de Conhecimento, Mineração e Aprendizado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="wesaac.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card card-shadow hover-lift">
+                        <div class="card-header bg-amber">
+                            <h3>WESAAC</h3>
+                        </div>
+                        <div class="card-body">
+                            <p data-i18n="events.wesaac">Workshop-Escola sobre Agentes, Ambientes e Aplicações</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="ctdiac.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card card-shadow hover-lift">
+                        <div class="card-header bg-blue">
+                            <h3>CTDIAC</h3>
+                        </div>
+                        <div class="card-body">
+                            <p data-i18n="events.ctdiac">15º Concurso Nacional de Teses e Dissertações em IA e
+                                Computacional</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section with simple slider -->
+    <section class="section bg-light-gray" id="location">
+        <div class="container">
+            <div class="grid-2-col reverse">
+                <div class="image-block card-shadow slider-wrapper">
+                    <img src="assets/images/carousel_1.jpg" alt="Belezas de Mato Grosso"
+                        class="slider-img active rounded-img">
+                    <img src="assets/images/carousel_2.jpg" alt="Belezas de Mato Grosso" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_3.jpg" alt="Belezas de Mato Grosso" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_4.jpg" alt="Belezas de Mato Grosso" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_5.jpg" alt="Cidade de Cuiabá" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_6.jpg" alt="Cidade de Cuiabá" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_7.jpg" alt="Cidade de Cuiabá" class="slider-img rounded-img">
+                    <img src="assets/images/carousel_8.jpg" alt="Cidade de Cuiabá" class="slider-img rounded-img">
+                    <div class="slider-nav">
+                        <button class="slider-dot active"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h2 class="section-title" data-i18n="location.title">Venha conhecer Cuiabá Mato Grosso</h2>
+                    <div class="title-underline"></div>
+                    <p data-i18n="location.p1">Descubra uma região onde a modernidade de Cuiabá se encontra com a
+                        exuberância natural de Mato Grosso. Um destino surpreendente que combina clima tropical,
+                        infraestrutura para grandes eventos e uma hospitalidade incomparável.</p>
+                    <p data-i18n="location.p2">Aproveite também para estender sua visita e vivenciar destinos
+                        internacionalmente cobiçados, como as belezas místicas da Chapada dos Guimarães e os safáris
+                        inesquecíveis no majestoso Pantanal.</p>
+
+                    <a href="tourism.html" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;"
+                        data-i18n="location.btn">Conhecer Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section class="section" id="sponsors">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="sponsors.title">Organizado Por</h2>
+            <div class="title-underline center"></div>
+
+            <div class="sponsors-grid">
+                <div class="sponsor-item">
+                    <h4 data-i18n="sponsors.promo">Promoção</h4>
+                    <div class="sponsor-box card-shadow" style="padding: 1rem; background: white;">
+                        <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/logo_sbc.png" alt="SBC Logo"
+                                style="max-height: 80px; width: auto; mix-blend-mode: multiply;">
+                        </a>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <h4 data-i18n="sponsors.support2">Apoio Institucional</h4>
+                    <div class="sponsor-box card-shadow" style="padding: 1rem; background: white;">
+                        <a href="https://www.ufmt.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/logo_ufmt.png" alt="UFMT Logo"
+                                style="max-height: 80px; width: auto; mix-blend-mode: multiply;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">BRACIS <span>2026</span></h3>
+                    <p data-i18n="footer.date">19 a 22 de Outubro, 2026</p>
+                    <p>Cuiabá, MT, Brasil</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                        <li><a href="#colocated" data-i18n="nav.colocated">Eventos</a></li>
+                        <li><a href="#location" data-i18n="nav.location">Cuiabá</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <a href="https://instagram.com/bracis" target="_blank" class="instagram-link"
+                        data-i18n="footer.instagram">Siga o BRACIS no Instagram ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer.rights">&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+                <p data-i18n="footer.dev">Desenvolvido com ❤️ na UFMT</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

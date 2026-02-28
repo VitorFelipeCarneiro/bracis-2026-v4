@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local do Evento | BRACIS 2026</title>
+
+    <!-- Google Fonts: Inter and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .local-hero {
+            background-color: var(--bg-dark);
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/images/cuiaba_calorosa_hq.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 500px;
+            border-radius: var(--radius-default);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-default);
+            box-shadow: var(--shadow-soft);
+            border-left: 5px solid var(--accent-amber);
+            margin-bottom: 2rem;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: var(--radius-default);
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .photo-gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>📅 19 a 22 de Outubro de 2026 | Cuiabá, MT, Brasil</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="btn btn-secondary"
+                        style="color: var(--primary-blue) !important; border-color: var(--primary-blue);">Voltar ao
+                        Início</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="local-hero">
+        <div class="container hero-content" style="z-index: 2;">
+            <p class="hero-subtitle" style="color: var(--accent-amber);">Sede Principal</p>
+            <h1 class="hero-title" style="margin-bottom: 1rem;">Local do Evento</h1>
+            <p class="lead-text" style="color: white; max-width: 600px; margin: 0 auto;">UNISENAI - Antiga
+                FATEC<br>Cuiabá, Mato Grosso</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="section bg-light-gray">
+        <div class="container">
+            <div class="grid-2-col">
+                <div class="text-block">
+                    <h2 class="section-title">Onde a Inovação Acontece</h2>
+                    <div class="title-underline"></div>
+
+                    <div class="info-card">
+                        <h3 style="color: var(--primary-blue); font-size: 1.4rem; margin-bottom: 0.5rem;">UNISENAI
+                            (Antiga FATEC)</h3>
+                        <p style="font-weight: 500; margin-bottom: 1rem;">
+                            📍 Avenida 15 de Novembro, 303<br>
+                            Bairro Porto<br>
+                            Cuiabá - MT, Brasil<br>
+                            CEP: 78020-300
+                        </p>
+                        <p>O BRACIS 2026 será realizado nas modernas e amplas instalações do UNISENAI (antiga FATEC),
+                            localizadas estrategicamente no histórico bairro do Porto em Cuiabá. O espaço conta com
+                            auditórios climatizados de alta capacidade, laboratórios tecnológicos e áreas abertas ideais
+                            para networking e coffee breaks.</p>
+                    </div>
+                </div>
+
+                <div class="map-block">
+                    <div class="map-container">
+                        <!-- Google Maps Embed for SENAI Porto, Ave 15 de novembro -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.6105822944516!2d-56.12643502396328!3d-15.612848384918296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1e6dc37cefd%3A0xe54c1f1fc297ec59!2sSENAI%20-%20Porto!5e0!3m2!1spt-BR!2sbr!4v1715424050212!5m2!1spt-BR!2sbr"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photos -->
+            <h2 class="section-title text-center" style="margin-top: 4rem;">Galeria de Fotos</h2>
+            <div class="title-underline center"></div>
+            <p class="text-center lead-text">Ambientes do evento e arredores no histórico Bairro do Porto.</p>
+
+            <div class="photo-gallery">
+                <img src="assets/images/local_1.jpg" alt="Acesso Principal e Área Externa">
+                <img src="assets/images/local_2.jpg" alt="Estruturas e Centro Histórico Próximo">
+                <img src="assets/images/local_3.jpg" alt="Arredores do Bairro do Porto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="padding-top: 2rem;">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

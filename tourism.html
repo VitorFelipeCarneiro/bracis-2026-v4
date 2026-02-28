@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo | BRACIS 2026</title>
+
+    <!-- Google Fonts: Montserrat (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Primary Stylesheet (reusing V4 styles + specific overrides if needed) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Specific Tourism Page Styles */
+        .tourism-hero {
+            background-color: var(--bg-dark);
+            /* Fallback */
+            height: 80vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 500px;
+            border-radius: var(--radius-default);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            margin-top: 3rem;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: var(--radius-default);
+            box-shadow: var(--shadow-soft);
+            background-color: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .beauties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .beauty-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: var(--radius-default) var(--radius-default) 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <!-- Simple Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>📅 19 a 22 de Outubro de 2026 | Cuiabá, MT, Brasil</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation (Simplified for Tourism Page) -->
+    <nav class="main-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="btn btn-secondary"
+                        style="color: var(--primary-blue) !important; border-color: var(--primary-blue);">Voltar ao
+                        Início</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="tourism-hero">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="assets/videos/descubra_mg_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" style="z-index: 1;"></div>
+        <div class="hero-content" style="z-index: 2; position: relative;">
+            <p class="hero-subtitle">Turismo & Belezas</p>
+            <h1 class="hero-title">Descubra Mato&nbsp;Grosso</h1>
+            <p class="lead-text" style="color: white;">A fascinante capital Cuiabá e as exuberantes belezas naturais do
+                estado.</p>
+        </div>
+    </header>
+
+    <!-- History & Culture Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="grid-2-col">
+                <div class="text-block">
+                    <h2 class="section-title">Cuiabá: A Capital Calorosa</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead-text">Fundada em 1719, Cuiabá é famosa por seu clima quente e pela imensa
+                        hospitalidade de seu povo. Conhecida carinhosamente como "Cidade Verde" devido à sua rica
+                        arborização nativa, a capital mato-grossense é um caldeirão cultural vibrante.</p>
+                    <p>O Centro Histórico preserva lindos casarões coloniais. Parques como o Mãe Bonifácia e das Águas
+                        são perfeitos para caminhadas no fim de tarde. A culinária local é absolutamente imperdível, com
+                        destaque unânime para os pratos à base de peixes dos ricos rios da região — como o cobiçado
+                        pintado e o pacu — além da tradicional Farofa de Banana e da icônica Maria Isabel.</p>
+                </div>
+                <div class="image-block card-shadow" style="padding: 1rem; border-radius: var(--radius-default);">
+                    <img src="assets/images/cuiaba_calorosa_hq.jpg" alt="Cuiabá Histórica" class="rounded-img"
+                        style="height: 350px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Natural Beauties Video Section -->
+    <section class="section bg-light-gray" style="text-align: center;">
+        <div class="container">
+            <h2 class="section-title">Um Privilégio Geográfico Global</h2>
+            <div class="title-underline center"></div>
+            <p class="lead-text" style="max-width: 800px; margin: 0 auto 3rem;">O estado de Mato Grosso é o único do
+                Brasil a abrigar simultaneamente três dos principais biomas do país: o Pantanal, a Floresta Amazônica e
+                o Cerrado.</p>
+
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/videos/hq_loop_video.mp4" type="video/mp4">
+                    Seu navegador não suporta a visualização de vídeos HTML5.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Natural Beauties Cards -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Roteiros Inesquecíveis</h2>
+            <div class="title-underline center"></div>
+
+            <div class="beauties-grid">
+                <div class="card card-shadow hover-lift beauty-card">
+                    <img src="assets/images/mato_grosso_1.png" alt="Chapada dos Guimarães">
+                    <div class="card-body">
+                        <h3 style="color: var(--primary-blue);">Chapada dos Guimarães</h3>
+                        <p>A apenas 60 km de Cuiabá, um paraíso místico com seus paredões gigantescos de rocha
+                            avermelhada, dezenas de cachoeiras e mirantes impressionantes.</p>
+                    </div>
+                </div>
+                <div class="card card-shadow hover-lift beauty-card">
+                    <img src="assets/images/pantanal_new.jpg" alt="Pantanal">
+                    <div class="card-body">
+                        <h3 style="color: var(--primary-blue);">Pantanal</h3>
+                        <p>A maior planície inundável do planeta. Oferece uma experiência de imersão e safáris
+                            fotográficos inesquecíveis para observação da onça-pintada e aves exóticas.</p>
+                    </div>
+                </div>
+                <div class="card card-shadow hover-lift beauty-card">
+                    <img src="assets/images/nobres_bom_jardim.jpg" alt="Nobres e Bom Jardim">
+                    <div class="card-body">
+                        <h3 style="color: var(--primary-blue);">Nobres e Bom Jardim</h3>
+                        <p>Mais ao norte, essa incrível região impressiona com suas nascentes de águas extremamente
+                            cristalinas, ideais para flutuação lado a lado com cardumes coloridos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Interactive Embed -->
+    <section class="section bg-light-gray">
+        <div class="container">
+            <h2 class="section-title text-center">Navegue por Cuiabá</h2>
+            <div class="title-underline center"></div>
+            <p class="lead-text text-center">Explore a capital e encontre hotéis, restaurantes e pontos turísticos
+                próximos ao evento.</p>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122856.3242207908!2d-56.16634594635671!3d-15.590119851608752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db138612140bb%3A0xeebd12a9ca1702f2!2sCuiab%C3%A1%2C%20State%20of%20Mato%20Grosso!5e0!3m2!1sen!2sbr!4v1715424050212!5m2!1sen!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições | BRACIS 2026</title>
+
+    <!-- Google Fonts: Inter and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .reg-hero {
+            background-color: var(--bg-dark);
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/images/mato_grosso_1.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .pricing-section {
+            padding: 5rem 0;
+            background-color: var(--bg-light-gray);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--radius-large);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: transform var(--transition-speed) ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .pricing-card.highlight {
+            border: 2px solid var(--primary-blue);
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .pricing-card.highlight:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: var(--accent-amber);
+            color: var(--bg-dark);
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .pricing-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .info-section {
+            padding: 4rem 0;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>📅 19 a 22 de Outubro de 2026 | Cuiabá, MT, Brasil</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="btn btn-secondary"
+                        style="color: var(--primary-blue) !important; border-color: var(--primary-blue);">Voltar ao
+                        Início</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="reg-hero">
+        <div class="container hero-content" style="z-index: 2;">
+            <p class="hero-subtitle" style="color: var(--accent-amber);">Participe</p>
+            <h1 class="hero-title" style="margin-bottom: 1rem;">Inscrições</h1>
+            <p class="lead-text" style="color: white; max-width: 600px; margin: 0 auto;">Garanta sua vaga na 36ª
+                Conferência Brasileira de Sistemas Inteligentes.</p>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Valores de Inscrição</h2>
+                <div class="title-underline center"></div>
+                <p class="lead-text">Escolha a categoria que melhor se adapta ao seu perfil.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Estudante de Graduação -->
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Estudante (Graduação)</h3>
+                    <div class="pricing-price">R$ 150<span>/pessoa</span></div>
+                    <ul class="pricing-features">
+                        <li>Acesso a todas as palestras</li>
+                        <li>Welcome Coffee nos 4 dias</li>
+                        <li>Certificado de Participação Eletrônico</li>
+                        <li>Acesso aos Anais do Evento</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Inscrever-se</a>
+                </div>
+
+                <!-- Associado SBC -->
+                <div class="pricing-card highlight">
+                    <div class="popular-badge">Recomendado</div>
+                    <h3 class="pricing-title">Associado SBC</h3>
+                    <div class="pricing-price">R$ 350<span>/pessoa</span></div>
+                    <ul class="pricing-features">
+                        <li>Acesso completo ao BRACIS 2026</li>
+                        <li>Desconto exclusivo para membros ativos</li>
+                        <li>Kit do Participante Premium</li>
+                        <li>Convite para Coquetel de Abertura</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Inscrever-se</a>
+                </div>
+
+                <!-- Profissional Não-Sócio -->
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Profissional / Pesquisador</h3>
+                    <div class="pricing-price">R$ 550<span>/pessoa</span></div>
+                    <ul class="pricing-features">
+                        <li>Acesso completo aos eventos satélites</li>
+                        <li>Sessões de Networking</li>
+                        <li>Certificado de Apresentação (Autores)</li>
+                        <li>Acesso à Plataforma de Vagas Parceiras</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Inscrever-se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Info Section -->
+    <section class="info-section">
+        <div class="container text-center">
+            <h3>Informações Importantes</h3>
+            <p style="max-width: 800px; margin: 1rem auto; color: var(--text-muted); line-height: 1.8;">
+                Estudantes e associados da SBC devem enviar o comprovante de vínculo atualizado no momento da inscrição.
+                As inscrições em lote ou corporativas podem obter descontos adicionais — entre em contato através da
+                página oficial.
+                <strong>Política de Cancelamento:</strong> Cancelamentos solicitados até 30 dias antes do evento terão
+                reembolso de 80%.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="padding-top: 2rem;">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

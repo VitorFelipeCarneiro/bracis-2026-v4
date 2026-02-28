@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIL | BRACIS 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .event-hero {
+            background-color: var(--primary-blue);
+            background-image: linear-gradient(135deg, #1e3a8a 0%, var(--accent-amber) 100%);
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .event-content {
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-default);
+            box-shadow: var(--shadow-strong);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <nav class="main-nav" id="navbar" style="background: rgba(255,255,255,0.95);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn btn-secondary"
+                        style="color: var(--primary-blue) !important; border-color: var(--primary-blue);">Voltar ao
+                        Início</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="event-hero">
+        <div class="container">
+            <p class="hero-subtitle" style="color: white; font-weight: 600;">Evento Satélite</p>
+            <h1 class="hero-title" style="font-size: 4rem;">STIL</h1>
+            <p class="lead-text" style="color: rgba(255,255,255,0.9);">Simpósio Brasileiro de Tecnologia da Informação e
+                da Linguagem Humana</p>
+        </div>
+    </header>
+
+    <section class="section bg-light" style="padding-top: 0;">
+        <div class="container">
+            <div class="event-content">
+                <h2 class="section-title">Sobre o Evento</h2>
+                <div class="title-underline"></div>
+                <p class="lead-text">O STIL é o principal evento na área de Processamento de Linguagem Natural (PLN) e
+                    Linguística Computacional do Brasil, reunindo pesquisadores para explorar o processamento automático
+                    da linguagem humana.</p>
+
+                <h3 style="margin-top: 2rem; color: var(--primary-blue);">Tópicos de Interesse</h3>
+                <ul style="margin-top: 1rem; line-height: 1.8; list-style-position: inside;">
+                    <li>Análise e Geração de Linguagem Natural</li>
+                    <li>Sistemas de Diálogo e Chatbots Avançados</li>
+                    <li>Tradução Automática e Multilinguismo</li>
+                    <li>Análise de Sentimentos e Mineração de Opiniões</li>
+                    <li>Modelos de Linguagem Baseados em Redes Neurais Profundas</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem; color: var(--primary-blue);">Datas Importantes</h3>
+                <ul style="margin-top: 1rem; line-height: 1.8; list-style-position: inside;">
+                    <li><strong>Submissão de Artigos:</strong> A definir</li>
+                    <li><strong>Notificação de Aceitação:</strong> A definir</li>
+                    <li><strong>Câmera Ready:</strong> A definir</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

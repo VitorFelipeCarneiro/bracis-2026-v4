@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização | BRACIS 2026</title>
+
+    <!-- Google Fonts: Inter and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .org-hero {
+            background-color: var(--bg-dark);
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/images/mato_grosso_1.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .committee-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .committee-card {
+            background: var(--bg-light-gray);
+            padding: 2rem;
+            border-radius: var(--radius-default);
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .committee-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .committee-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .committee-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .committee-list li:last-child {
+            border-bottom: none;
+        }
+
+        .person-name {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .person-role {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Disclaimer Banner -->
+    <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; z-index: 9999; position: relative;">
+        ⚠️ AVISO: Este é um projeto de PROPOSTA para o BRACIS 2026. NÃO é o site oficial. Todas as informações aqui contidas são fictícias.
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>📅 19 a 22 de Outubro de 2026 | Cuiabá, MT, Brasil</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/bracis_logo.png" alt="BRACIS 2026"></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="btn btn-secondary"
+                        style="color: var(--primary-blue) !important; border-color: var(--primary-blue);">Voltar ao
+                        Início</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="org-hero">
+        <div class="container hero-content" style="z-index: 2;">
+            <p class="hero-subtitle" style="color: var(--accent-amber);">Comitê</p>
+            <h1 class="hero-title" style="margin-bottom: 1rem;">Organização</h1>
+            <p class="lead-text" style="color: white; max-width: 600px; margin: 0 auto;">Equipe dedicada à realização do
+                BRACIS 2026.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="committee-section">
+        <div class="container">
+            <h2 class="section-title text-center">Nossa Equipe</h2>
+            <div class="title-underline center"></div>
+
+            <div class="grid-2-col" style="margin-top: 3rem;">
+                <div class="committee-card">
+                    <h3>Coordenação Geral</h3>
+                    <ul class="committee-list">
+                        <li>
+                            <div class="person-name">Dr. Exemplo da Silva</div>
+                            <div class="person-role">Universidade Federal de Mato Grosso (UFMT)</div>
+                        </li>
+                        <li>
+                            <div class="person-name">Dra. Nome Sobrenome</div>
+                            <div class="person-role">Instituto Nacional de Pesquisas</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="committee-card">
+                    <h3>Organização Local</h3>
+                    <ul class="committee-list">
+                        <li>
+                            <div class="person-name">Comitê Organizador Local</div>
+                            <div class="person-role">Instituições Parceiras, Cuiabá</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <p class="lead-text" style="opacity: 0.7;">(Esta página será atualizada com a lista completa do comitê
+                    em breve.)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="padding-top: 2rem;">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRACIS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
